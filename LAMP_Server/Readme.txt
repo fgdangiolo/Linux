@@ -4,4 +4,4 @@ sudo chmod u+x lamp.sh
 
 Then execute:
 
-./my_up.sh
+./lamp.sh
