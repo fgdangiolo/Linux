@@ -1,1 +1,14 @@
 
+Openocd:
+
+// Where says "HOME", replace for the name of you user
+
+$ mkdir -p ${HOME}/opt
+$ cd ${HOME}/opt
+$ tar xvf ~/Downloads/gnu-mcu-eclipse-openocd-0.10.0-5-20171110-1117-debian64.tgz
+$ chmod -R -w gnu-mcu-eclipse/openocd/0.10.0-5-20171110-1117
+
+Testing Openocd:
+
+$ ${HOME}/opt/gnu-mcu-eclipse/openocd/0.8.0-201501181257/bin/openocd \
+  -f board/stm32f4discovery.cfg
