@@ -10,4 +10,4 @@ $ chmod -R -w gnu-mcu-eclipse/openocd/0.10.0-7-20180123-1217
 
 Testing Openocd:
 
-$ ${HOME}/opt/gnu-mcu-eclipse/openocd/0.10.0-7-20180123-1217/bin/openocd -f board/stm32f4discovery.cfg
+${HOME}/opt/gnu-mcu-eclipse/openocd/0.10.0-7-20180123-1217/bin/openocd -f board/stm32f4discovery.cfg
