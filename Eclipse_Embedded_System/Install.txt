@@ -1,7 +1,7 @@
 
 Openocd:
 
-// Where says "HOME", replace for the name of you user
+// Where is "HOME", replace for the name of your user
 
 $ mkdir -p ${HOME}/opt
 $ cd ${HOME}/opt
