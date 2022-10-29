@@ -16,7 +16,7 @@ echo "======================"
 #1) To install the latest Enterprise edition:
 sudo apt-get install -y apt-transport-https
 sudo apt-get install -y software-properties-common wget
-wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
+sudo wget -q -O - https://packages.grafana.com/gpg.key | sudo apt-key add -
 
 #Add this repository for stable releases:
 
