@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#https://docs.influxdata.com/influxdb/v2.1/install/?t=Linux
+#Source for visiting: 
+#https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-22-04
 
 echo "======================="
 echo "Update and Upgrade..."
@@ -13,11 +14,21 @@ echo "======================"
 echo "Installing SQL..."
 echo "======================"
 
-#1) Install InfluxDB as a service with systemd:
+#1) Install mysql-server:
 sudo apt install mysql-server
 
 
-#2) Start the InfluxDB service:
+#2) Start the mysql service:
 
 sudo systemctl start mysql.service
 
+#***Executing mysql****
+#sudo mysql
+
+#*****Then run the following ALTER USER command to change the root user’s authentication method to one that uses a password. The following example changes the authentication method to mysql_native_password:*****
+#ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+#*****After making this change, exit the MySQL prompt:***
+#exit
+
+#mysql -u root -p
