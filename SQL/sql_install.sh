@@ -25,10 +25,18 @@ sudo systemctl start mysql.service
 #***Executing mysql****
 #sudo mysql
 
-#*****Then run the following ALTER USER command to change the root user’s authentication method to one that uses a password. The following example changes the authentication method to mysql_native_password:*****
+#*****Then run the following ALTER USER command to change the root user’s authentication method to one that uses a password. The following example changes the authentication method to mysql_native_password:***** Attention, the pass is: "password"
 #ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
 
 #*****After making this change, exit the MySQL prompt:***
 #exit
 
 #mysql -u root -p
+
+#********Then go back to using the default authentication method using this command:****
+#ALTER USER 'root'@'localhost' IDENTIFIED WITH auth_socket;
+
+#*****Run 
+#sudo mysql
+
+
