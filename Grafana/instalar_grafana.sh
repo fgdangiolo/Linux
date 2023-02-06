@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Grafana
 #https://grafana.com/docs/grafana/latest/installation/debian/
 
 echo "======================="
